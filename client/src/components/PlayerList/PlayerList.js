@@ -1,11 +1,12 @@
 import React from 'react';
 
-import PlayerCard from '../PlayerCard/PlayerCard.js'
+import PlayerCard from '../PlayerCard/PlayerCard.js';
+import './PlayerList.scss';
 
 const PlayerList = ({ playerData }) => {
 
     return(
-        <div>
+        <div className='player-card-wrapper'>
             {playerData.map(player => {
                 return <PlayerCard key={player.id} 
                                    name={player.name}

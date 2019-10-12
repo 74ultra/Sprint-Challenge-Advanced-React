@@ -1,7 +1,8 @@
 import React from 'react';
 import axios from 'axios';
-import './App.css';
+import './styles.scss';
 
+import NavBar from './components/NavBar/NavBar.js';
 import PlayerList from './components/PlayerList/PlayerList.js';
 
 class App extends React.Component {
@@ -26,7 +27,8 @@ class App extends React.Component {
   
   render(){
     return(
-      <div>
+      <div className='main'>
+        <NavBar className='navbar' />
         <PlayerList playerData={this.state.playerData}/>
       </div>
     )

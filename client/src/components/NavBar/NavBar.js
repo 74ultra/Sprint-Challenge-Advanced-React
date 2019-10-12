@@ -13,8 +13,8 @@ const NavBar = () => {
     }
     
     return(
-        <Menu className='navbar'>
-            <Button onClick={toggleBackground}>Shift Background</Button>
+        <Menu className='navbar' inverted>
+            <Button inverted onClick={toggleBackground}>Shift Background</Button>
         </Menu>
     )
 }
